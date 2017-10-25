@@ -78,57 +78,7 @@ function onlyIntegers([head, ...tail]) {
 onlyIntegers([1,2,"not me", 3, "or me", 4, true, 4.9, 5])
 {% endhighlight %}
 
-If we run `onlyIntegers` now, we get exactly what we expect,  an empty array.  As it stands now, we have a function that will traverse an array and return an empty array every time.  Well, we are returning an array, so we're part way there.  However, we want it to include only the integer values of the original array.  
-
-### Functions that Call Functions
-
-Let's hop into our console and experiment.
-
-You've likely already seen functions that call functions.
-
-{% highlight js %}
-function addBerry(word) {
-  return word.concat("berry");
-}
-
-function addGiant(word) {
-  return ("giant ").concat(word);	
-}
-
-function giantBerry(word) {
-  return addGiant(addBerry(word));	
-}
-
-console.log(giantBerry("straw"));
-console.log(giantBerry("blue"));
-console.log(giantBerry("chuck "));
-{% endhighlight %}
-
-Here, when we call `giantBerry` it in turn makes two function calls.  One to `addBerry` and another to `addGiant`.  The function `addGiant` waits for `addBerry` to return, and then does some work with the returned value.
-
-We could continue adding function calls to build our result.  
-
-{% highlight js %}
-function addBerry(word) {
-  return word.concat("berry");
-}
-
-function addGiant(word) {
-  return ("giant ").concat(word);	
-}
-
-function veryExcited(word) {
-	return (word).concat("!!!");
-}
-
-function veryExcitedGiantBerry(word) {
-  return veryExcited(addGiant(addBerry(word)));	
-}
-
-console.log(veryExcitedGiantBerry("straw"));
-console.log(veryExcitedGiantBerry("blue"));
-console.log(veryExcitedGiantBerry("chuck "));
-{% endhighlight %}
+If we run `onlyIntegers` now, we get exactly what we expect,  an empty array.  As it stands, we have a function that will traverse an array and return an empty array every time.  Well, we are returning an array, so we're part way there.  However, we want it to include only the integer values of the original array.  
 
 ### Using concat()
 
