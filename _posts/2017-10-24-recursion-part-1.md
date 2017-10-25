@@ -10,9 +10,7 @@ Now that we're set up, let's dive in!  For this section, clone this GitHub respo
 ## Traversing Arrays
 
 
-Let's say we're asked to write a function to find out if an array contains only integers.  If all its elements are integers, then we return `true`, otherwise, `false`.  However, we have a single constraint.  The essential logic of our code must run in a language that has no loops.  It also has no array methods like forEach().  It does have the equivalent of `Number.isInteger()`, but of course, we won't be able to use it to check the entire array at once[^footnote].  Where do we start?
-
-[^footnote]: If you pass `Number.isInteger()` an array, it will always return `false` because an array is not an integer.  Interestingly enough, arrays are implimented as objects in JavaScript.  They have additional properties and methods, but `typeof []` will return `'object'`
+Let's say we're asked to write a function to find out if an array contains only integers.  If all its elements are integers, then we return `true`, otherwise, `false`.  However, we have a single constraint.  The essential logic of our code must run in a language that has no loops.  It also has no array methods like forEach().  It does have the equivalent of `Number.isInteger()`, but of course, we won't be able to use it to check the entire array at once.  Where do we start?
 
 ### Breaking Down The Logic  
 
@@ -20,7 +18,7 @@ When we break down the logic of the problem, we realize that we already know how
 
 1. Visit each item in an array.
 2. Check if it's an integer (we can use `Number.isInteger()`)
-3. Return a result (simply, `return`)
+3. Return a result (`return true` or `return false`)
 
 Since we already know how to check if a number is an integer, and how to return a value, all we're left with is visiting each item in the array. 
 
@@ -40,6 +38,7 @@ allIntegers([1,2,3,4,5])
 ### Using Head and Tail
 
 What do we want to name the array passed to our function? In our case, it would actually be better to have access to `head` and `tail` variables rather than a single parameter named something like `array` (you'll see why in a moment).  We'll create these variables with the [rest operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters/ "Rest parameters"){:target="_blank"}.  Let's check that this works. 
+
 
 {% highlight js %}
 function allIntegers([head, ...tail]) {
