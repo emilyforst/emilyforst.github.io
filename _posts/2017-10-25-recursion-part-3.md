@@ -125,7 +125,9 @@ deepOnlyIntegers([1,[[2],"not me"], 3, [["or me", 4]], [true, [[4.9]], 5]]);
 And we're finished!
 
 
+<br/>
 
+#### [Next post &#9658;]({% post_url 2017-10-26-recursion-part-4 %})
 
 
 

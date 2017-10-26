@@ -134,4 +134,7 @@ Now we're done!  Let's follow our logic.
 We generally use head when we want to do some work, like checking if a value is an integer.
 We generally recur when we want to keep checking the rest of the array.  
 
+<br/>
+
+#### [Next post &#9658;]({% post_url 2017-10-25-recursion-part-3 %})
 
