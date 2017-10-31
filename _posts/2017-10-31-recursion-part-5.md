@@ -49,3 +49,28 @@ const binaryTreeB = {
 {% endhighlight %}
 
 Did you notice anything special about it?
+
+	         11
+	        /  \
+	       7    15
+	      / \   / \
+	     2  8  13  18
+
+In this tree, the root node is 11. It's left child, 7, is smaller, and its right child, 15, is larger.  
+
+            11
+           /  \
+          7    15
+
+Let's look at 11's children.  If we investigate 7, it follows the same patter, it's left child, 2, is smaller, and it's right child, 8, is larger. 
+
+             7
+            / \
+           2   8
+
+ This leaves us with 15.  Its left child, 13 is smaller, and its right child, 18, is larger.
+
+             15
+            /  \
+           13   18
+
