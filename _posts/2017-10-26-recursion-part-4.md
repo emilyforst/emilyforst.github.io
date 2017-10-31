@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Recursion, Part 4: Binary Trees'
+title: 'Recursion, Part 4: Traversing Binary Trees'
 date:   2017-10-26 10:39:04 +0100 
 categories: recursion compsci
 ---
