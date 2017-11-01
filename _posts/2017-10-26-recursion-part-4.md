@@ -66,9 +66,9 @@ const binaryTreeA =
 
 > **Binary Tree Size Terminology**
 
-> - Height - The number of edges from a node to the tree's root node
 > - Depth - The number of edges on the longest path from a node to a leaf node
-> - Level - 1 + the number of edges from the node to the tree's root node
+> - Height - The number of edges from a node to the tree's root node
+> - Level -  The number of edges from a node to the tree's root node + 1
 
 
 
