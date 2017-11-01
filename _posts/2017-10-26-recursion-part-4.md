@@ -9,9 +9,10 @@ categories: recursion compsci
 
 > - Nodes - the values we store
 > - Edges - the lines between nodes
-> - Root node - topmost node in the tree
+> - Root - topmost node in the tree
 > - Parent - a node with 0, 1, or 2 children
 > - Child - a node that represents the left or right descendent of a parent
+> - Leaf - a node with no children
 
 ## Introduction to Binary Trees
 
@@ -61,131 +62,17 @@ const binaryTreeA =
   };
 {% endhighlight %}
 
-### Traversing a Binary Tree
+### Determining the Size of a Binary Tree
 
-Let's write a slightly larger tree:
+> **Binary Tree Size Terminology**
 
-
-	         11
-	        /  \
-	       7    15
-	      / \   / \
-	     2  8  13  18
-
-
-{% highlight js %}
-const binaryTreeB = {
-  value: 11, 
-  left: {
-    value: 7, 
-    left: {
-      value: 2, 
-      left: null, 
-      right: null
-    }, 
-    right: {
-      value: 8, 
-      left: null, 
-      right: null
-    }
-  }, 
-  right: {
-    value: 15,
-    left: {
-      value: 13, 
-      left: null, 
-      right: null
-    }, 
-    right: {
-      value: 18, 
-      left: null, 
-      right: null
-    }
-  }
-};
-{% endhighlight %}
+> - Height of Node - 
+> - Height of Tree - 
+> - Level - 
+> - Depth - 
 
 
 
-Let's also write a function that traverses this tree, and logs each node to the console.  As usual, let's start by writing the function.
-
-{% highlight js %}
-function logBinaryTree(tree) {
-	
-}
-logBinaryTree(binaryTreeB)
-{% endhighlight %}
-
-
-And we're finished!
-
-{% highlight js %}
-function logBinaryTree(tree) {
-  console.log(tree.value);
-  if (!tree.left && !tree.right) return;
-  if (tree.left && tree.right) {
-    return logBinaryTree(tree.left) || logBinaryTree(tree.right)
-  }
-}
-logBinaryTree(binaryTreeB)
-{% endhighlight %}
-
-
-Let's write a function that logs a node to the console only if it's an integer.
-
-{% highlight js %}
-const binaryTreeC = {
-  value: 11, 
-  left: {
-    value: "a", 
-    left: {
-      value: "c", 
-      left: null, 
-      right: null
-    }, 
-    right: {
-      value: 8, 
-      left: null, 
-      right: null
-    }
-  }, 
-  right: {
-    value: false,
-    left: {
-      value: 13, 
-      left: null, 
-      right: null
-    }, 
-    right: {
-      value: "b", 
-      left: null, 
-      right: null
-    }
-  }
-};
-{% endhighlight %}
-
-Write a function `onlyIntegersTree` that only logs the integer values of a binary tree.
-
-{% highlight js %}
-function onlyIntegersTree(tree) {
-
-}
-onlyIntegersTree(binaryTreeC);
-{% endhighlight %}
-
-And we're finished!
-
-{% highlight js %}
-function onlyIntegersTree(tree) {
-  if (Number.isInteger(tree.value)) console.log(tree.value);
-  if (!tree.left && !tree.right) return;
-  if (tree.left && tree.right) {
-    return onlyIntegersTree(tree.left) || onlyIntegersTree(tree.right)
-  }
-}
-onlyIntegersTree(binaryTreeC);
-{% endhighlight %}
 
 
 

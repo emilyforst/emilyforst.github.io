@@ -5,7 +5,6 @@ date:  2017-10-31 17:35:02 +0000
 categories: recursion compsci
 ---
 
-
 Let's revisit one of our trees from the last post.
 
 
@@ -73,4 +72,8 @@ Let's look at 11's children.  If we investigate 7, it follows the same patter, i
              15
             /  \
            13   18
+
+This is a specialized form of a binary tree called a Binary Search Tree.  All the nodes to its left are smaller than the root node.  All the nodes to its right are larger.  If we were looking for a specific value, we'd only search a portion of the tree, making our search time much shorter.
+
+
 
