@@ -4,7 +4,14 @@ title: 'Recursion, Part 6: Traversing Binary Trees'
 date:  2017-11-01 10:31:54 +0000 
 categories: recursion compsci
 ---
-### Traversing a Binary Tree
+> **Common Tree Traversals for Binary Trees**
+
+> - Breadth First (also called Level Order)
+> - Depth First
+  > - Inorder 
+  > - Preorder 
+  > - Postorder
+
 
 	         11
 	        /  \
@@ -47,7 +54,7 @@ const binaryTreeB = {
 
 
 
-Let's also write a function that traverses this tree, and logs each node to the console.  As usual, let's start by writing the function.
+Let's write a function that traverses this tree, and logs each node to the console.  As usual, let's start by writing the function.
 
 {% highlight js %}
 function logBinaryTree(tree) {
