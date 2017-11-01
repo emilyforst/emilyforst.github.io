@@ -13,6 +13,7 @@ categories: recursion compsci
 > - Parent - a node with 0, 1, or 2 children
 > - Child - a node that represents the left or right descendent of a parent
 > - Leaf - a node with no children
+> - Path - the sequence of nodes and edges connecting two nodes
 
 ## Introduction to Binary Trees
 
@@ -69,6 +70,14 @@ const binaryTreeA =
 > - Depth - The number of edges on the longest path from a node to a leaf node
 > - Height - The number of edges from a node to the tree's root node
 > - Level -  The number of edges from a node to the tree's root node + 1
+
+	         11
+	        /  \
+	       7    15
+	      / \   / \
+	     2  8  13  18
+
+What is the depth, height, and level of the node whose value is 7 in the above tree?
 
 
 

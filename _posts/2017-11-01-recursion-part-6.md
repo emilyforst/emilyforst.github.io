@@ -6,9 +6,6 @@ categories: recursion compsci
 ---
 ### Traversing a Binary Tree
 
-Let's write a slightly larger tree:
-
-
 	         11
 	        /  \
 	       7    15
