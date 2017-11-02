@@ -7,10 +7,10 @@ categories: recursion compsci
 > **Common Tree Traversals for Binary Trees**
 
 > - Breadth First (also called Level Order)
-> - Depth First:
-  > - Inorder 
-  > - Preorder 
-  > - Postorder
+> - Depth First
+  > (a) Inorder 
+  > (b) Preorder 
+  > (c) Postorder
 
 
 	         11
