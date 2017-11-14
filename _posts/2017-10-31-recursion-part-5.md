@@ -78,8 +78,8 @@ This is a specialized form of a binary tree called a Binary Search Tree.  All th
 Next, let's build a binary tree class.
 
 {% highlight js %}
-class BinaryTree {
-
+class BinaryTree() {
+  this.root = null;
 }
 {% endhighlight %}
 
