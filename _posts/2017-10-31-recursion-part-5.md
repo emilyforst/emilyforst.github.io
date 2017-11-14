@@ -110,7 +110,6 @@ class BinarySearchTree {
    }   
   }
 }
-{% endhighlight %}
 
 class Node {
   constructor(value) {
@@ -119,5 +118,6 @@ class Node {
     this.right = null;
   }
 }
+{% endhighlight %}
 
 ### Binary Tree Node Deletion 
