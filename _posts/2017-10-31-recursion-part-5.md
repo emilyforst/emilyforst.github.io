@@ -120,4 +120,31 @@ class Node {
 }
 {% endhighlight %}
 
+{% highlight js %}
+class BinarySearchTree {
+  constructor() {
+    this.root = null;
+  }
+
+  insert(value) {
+   if(!this.root){
+      this.root = new Node(value);
+      return;
+   } 
+
+   if (this.root.value === value) {
+     console.log("This node is already in the tree and won't be inserted."); 
+   } 
+  }
+}
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+{% endhighlight %}
+
 ### Binary Tree Node Deletion 
