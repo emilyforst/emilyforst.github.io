@@ -79,7 +79,9 @@ Next, let's build a binary tree class.
 
 {% highlight js %}
 class BinaryTree() {
-  this.root = null;
+  constructor() {
+    this.root = null;
+  }
 }
 {% endhighlight %}
 
@@ -94,5 +96,28 @@ class Node {
 {% endhighlight %}
 
 ### Binary Tree Node Insertion
+
+{% highlight js %}
+class BinarySearchTree {
+  constructor() {
+    this.root = null;
+  }
+
+  insert(value) {
+   if(!this.root){
+      this.root = new Node(value);
+      return;
+   }   
+  }
+}
+{% endhighlight %}
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
 
 ### Binary Tree Node Deletion 
