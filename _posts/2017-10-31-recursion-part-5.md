@@ -75,7 +75,7 @@ Let's look at 11's children.  If we investigate 7, it follows the same patter, i
 
 This is a specialized form of a binary tree called a Binary Search Tree.  All the nodes to its left are smaller than the root node.  All the nodes to its right are larger.  If we were looking for a specific value, we'd only search a portion of the tree, making our search time much shorter.
 
-Next, let's build a binary tree class.
+Next, let's build a binary search tree class.
 
 {% highlight js %}
 class BinarySearchTree {
@@ -87,7 +87,7 @@ class BinarySearchTree {
 }
 {% endhighlight %}
 
-### Binary Tree Node Insertion
+### Binary Search Tree Node Insertion
 
 {% highlight js %}
 class BinarySearchTree {
@@ -131,4 +131,4 @@ if (this.value < value) {
 }
 {% endhighlight %}
 
-### Binary Tree Node Deletion 
+### Binary Search Tree Node Deletion 
