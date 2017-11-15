@@ -78,15 +78,7 @@ This is a specialized form of a binary tree called a Binary Search Tree.  All th
 Next, let's build a binary tree class.
 
 {% highlight js %}
-class BinaryTree() {
-  constructor() {
-    this.root = null;
-  }
-}
-{% endhighlight %}
-
-{% highlight js %}
-class Node {
+class BinarySearchTree {
   constructor(value) {
     this.value = value;
     this.left = null;
@@ -99,19 +91,6 @@ class Node {
 
 {% highlight js %}
 class BinarySearchTree {
-  constructor() {
-    this.root = null;
-  }
-
-  insert(value) {
-   if(!this.root){
-      this.root = new Node(value);
-      return;
-   }   
-  }
-}
-
-class Node {
   constructor(value) {
     this.value = value;
     this.left = null;
@@ -122,69 +101,34 @@ class Node {
 
 {% highlight js %}
 class BinarySearchTree {
-  constructor() {
-    this.root = null;
-  }
-
-  insert(value) {
-   if(!this.root){
-      this.root = new Node(value);
-      return;
-   } 
-
-   if (this.root.value === value) {
-     console.log("This node is already in the tree and won't be inserted."); 
-   } 
-  }
-}
-
-class Node {
   constructor(value) {
     this.value = value;
     this.left = null;
     this.right = null;
   }
 }
-{% endhighlight %}
 
-{% highlight js %}
-class BinarySearchTree {
-  constructor() {
-    this.root = null;
-  }
+BinarySearchTree.prototype.insert = function(value) {
+ if (this.value === value) {
+   console.log("This node is already in the tree and won't be inserted."); 
+ }
 
-  insert(value) {
-   if(!this.root){
-      this.root = new Node(value);
-      return;
+ if (this.value > value) {
+   if (!this.left) {
+     this.left = new BinarySearchTree(value);
+   } else {
+     this.left.insert(value);
    } 
+ } 
 
-   if (this.root.value === value) {
-     console.log("This node is already in the tree and won't be inserted.");
-     return; 
-   }
-
-   if (this.root.value > value) {
-     if (!this.left) {
-       this.left = new Node(value);
-     } 
-   } 
-
-   if (this.root.value < value) {
-     if (!this.right) {
-       this.right = new Node(value);
-     } 
-   }
+if (this.value < value) {
+  if (!this.right) {
+     this.right = new BinarySearchTree(value);
+    } else {
+      this.right.insert(value);
+    }
   }
 }
 {% endhighlight %}
-
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
-}
 
 ### Binary Tree Node Deletion 
