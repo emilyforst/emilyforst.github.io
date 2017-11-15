@@ -132,3 +132,31 @@ if (this.value < value) {
 {% endhighlight %}
 
 ### Binary Search Tree Node Deletion 
+
+{% highlight js %}
+BinarySearchTree.prototype.remove = function(value) {
+  if (this.value > value) {
+    if(this.left.value === value) {
+      if (this.left.left) {
+        this.left = this.left.left;
+      } else if (this.left.right){
+        this.left = this.left.right;
+      }
+    } else {
+      this.left.remove(value);
+    }
+  }
+
+  if (this.value < value) {
+    if(this.right.value === value) {
+      if (this.right.right) {
+        this.right = this.right.right;
+      } else if (this.right.left){
+        this.right = this.right.left;
+      }
+    } else {
+      this.right.remove(value);
+    }
+  }
+}
+{% endhighlight %}
