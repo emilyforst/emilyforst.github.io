@@ -89,6 +89,8 @@ class BinarySearchTree {
 
 ### Binary Search Tree Node Insertion
 
+Let's write a binary search tree class and give it an insert method.
+
 {% highlight js %}
 class BinarySearchTree {
   constructor(value) {
