@@ -109,9 +109,11 @@ class BinarySearchTree {
     this.right = null;
   }
 }
+{% endhighlight %}
 
 Next, let's give our binary search tree class an insert method.
 
+{% highlight js %}
 BinarySearchTree.prototype.insert = function(value) {
  if (this.value === value) {
    console.log("This node is already in the tree and won't be inserted."); 
