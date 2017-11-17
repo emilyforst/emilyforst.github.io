@@ -101,6 +101,8 @@ class BinarySearchTree {
 }
 {% endhighlight %}
 
+Next, let's give our binary search tree class an insert method.
+
 {% highlight js %}
 class BinarySearchTree {
   constructor(value) {
@@ -110,8 +112,6 @@ class BinarySearchTree {
   }
 }
 {% endhighlight %}
-
-Next, let's give our binary search tree class an insert method.
 
 {% highlight js %}
 BinarySearchTree.prototype.insert = function(value) {
