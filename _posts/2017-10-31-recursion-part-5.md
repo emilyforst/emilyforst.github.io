@@ -89,7 +89,7 @@ class BinarySearchTree {
 
 ### Binary Search Tree Node Insertion
 
-Let's write a binary search tree class and give it an insert method.
+Let's write a binary search tree class and give it an insert method.  Let's begin with a class that creates an instance with a value, a left child, and a right child.
 
 {% highlight js %}
 class BinarySearchTree {
@@ -109,6 +109,8 @@ class BinarySearchTree {
     this.right = null;
   }
 }
+
+Next, let's give our binary search tree class an insert method.
 
 BinarySearchTree.prototype.insert = function(value) {
  if (this.value === value) {
@@ -134,6 +136,8 @@ if (this.value < value) {
 {% endhighlight %}
 
 ### Binary Search Tree Node Deletion 
+
+Now that we have an insert method, let's also give our class a remove method.
 
 {% highlight js %}
 BinarySearchTree.prototype.remove = function(value) {
