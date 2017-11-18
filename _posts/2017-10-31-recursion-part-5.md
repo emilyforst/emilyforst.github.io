@@ -5,6 +5,8 @@ date:  2017-10-31 17:35:02 +0000
 categories: recursion compsci
 ---
 
+## Binary Search Trees
+
 Let's revisit one of our trees from the last post.
 
 
