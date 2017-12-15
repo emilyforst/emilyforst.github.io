@@ -90,7 +90,7 @@ Hmm... something doesn't seem to be working.  We're not quite there yet.
 
 ### Finding A Terminating Condition
 
-Currently, `allIntegers` never returns a value.  It's elegant, in that we're doing a good amount of work with a few lines of code... but you know what they say, "form follows function".  Let's step through `allIntegers` a few more times to see what's going on.
+Currently, `allIntegers` never returns a value.  It's elegant, in that we're doing a good amount of work with a few lines of code, but we still have some work to do.  Let's step through `allIntegers` a few more times to see what's going on.
 
 Call     | Head | Tail
 -------- | ----   ----
