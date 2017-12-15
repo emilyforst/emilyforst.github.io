@@ -10,7 +10,7 @@ Now that we're set up, let's dive in!  For this section, clone this GitHub respo
 ## Traversing Arrays
 
 
-Let's say we're asked to write a function to find out if an array contains only integers.  If all its elements are integers, then we return `true`, otherwise, `false`.  However, we have a single constraint.  The essential logic of our code must run in a language that has no loops.  It also has no array methods like forEach().  It does have the equivalent of `Number.isInteger()`, but of course, we won't be able to use it to check the entire array at once.  Where do we start?
+Let's say we're asked to write a function to find out if an array contains only integers.  If all its elements are integers, then we return `true`, otherwise, `false`.  However, we have a single constraint.  We must not use a) any loops or b) any array methods like `forEach()`.  Where do we start?
 
 ### Breaking Down The Logic  
 
