@@ -9,7 +9,6 @@ Now that we're set up, let's dive in!  For this section, clone this GitHub respo
 
 ## Traversing Arrays
 
-
 Let's say we're asked to write a function to find out if an array contains only integers.  If all its elements are integers, then we return `true`, otherwise, `false`.  However, we have a single constraint.  We must not use a) any loops or b) any array methods like `forEach()`.  Where do we start?
 
 ### Breaking Down The Logic  
@@ -26,16 +25,18 @@ Since we already know how to check if a number is an integer, and how to return 
 2. ~~Check if it's an integer or not (we can use `Number.isInteger()`)~~
 3. ~~Return a result (simply, `return`)~~
 
-How do we do that?  Well, let's start by writing the function and passing it the array `[1,2,3,4,5]`. 
+How do we do that?  
+
+### Using Head and Tail
+
+Well, let's start by writing the function and passing it the array `[1,2,3,4,5]`. 
 
 {% highlight js %}
 function allIntegers() {
-	
+  
 }
 allIntegers([1,2,3,4,5])
 {% endhighlight %}
-
-### Using Head and Tail
 
 What do we want to name the array passed to our function? In our case, it would actually be better to have access to `head` and `tail` variables rather than a single parameter named something like `array` (you'll see why in a moment).  We'll create these variables with the [rest operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters/ "Rest parameters"){:target="_blank"}.  Let's check that this works. 
 
