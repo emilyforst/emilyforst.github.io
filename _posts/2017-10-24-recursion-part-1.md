@@ -90,7 +90,7 @@ Call     | Head | Tail
 <br/>
 The first time we call `allIntegers`, `tail` gives us `[2,3,4,5]`.  However, the next time we call `allIntegers`, `tail` gives us `[3,4,5]`.  What's interesting to remember here is that the length of the array we're checking gets shorter by one element each time.  Eventually, we run out of elements to check and are left with an empty array.
 
-How does this work?  All our function does so far is pass the `tail` of the previous `tail` each time. If you pass `[1,2,3,4,5]` to the `tail` function you wrote in the introduction, `[2,3,4,5]` should be returned to you.  Use your `tail` function now on `[2,3,4,5]` and it returns`[3,4,5]`.  That's exactly what we're doing in `allIntegers`, passing the `tail` of the previous `tail` over and over again.
+How does this work?  All our function does so far is pass the `tail` of the previous `tail` each time. Just like the introduction if we take the tail of [1,2,3,4,5], we get [2,3,4,5].  If we take the tail of [2,3,4,5], we get [3,4,5]. That's exactly what we're doing in `allIntegers`, passing the `tail` of the previous `tail` over and over again.
 
 That's all fine, but have we found out if an array contains only integers?  Well, let's check.
 
