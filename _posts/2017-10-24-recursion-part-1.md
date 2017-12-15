@@ -12,13 +12,17 @@ Now that we're set up, let's dive in!  For this section, clone this GitHub respo
 Let's say we're asked to write a function to find out if an array contains only integers.  If all its elements are integers, then we return `true`, otherwise, `false`.  It should work something like this:
 
 
-`allIntegers([1,2,3,4,5])` // returns `true`
+`allIntegers([1,2,3,4,5])` // returns `true` because all its elements are integers
 
-`allIntegers([1,1,1,1,1])` // returns `true`
+`allIntegers([1,1,1,1,1])` // returns `true` because all its elements are integers
 
-`allIntegers([1,2.222,3,4,5])` // returns `false`
+`allIntegers([1,2.222,3,4,5])` // returns `false` because it contains a float
 
-`allIntegers([1,2,3,"4",5])` // returns `false`
+`allIntegers([1,2,3,"4",5])` // returns `false` because it contains a string
+
+`allIntegers([1,2,[3],4,5])` // returns `false` because it contains an array
+
+`allIntegers([1,[2],3.14,4,5])` // returns `false` because it contains an array and a float
 
 However, we have a single constraint.  We must not use a) any loops (like `for` or `while`) or b) any array methods (like `forEach()`).  Where do we start?
 
