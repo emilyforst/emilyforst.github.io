@@ -3,7 +3,6 @@ layout: post
 title: 'Recursion, Part 6: Traversing Binary Trees'
 date:  2017-11-01 10:31:54 +0000 
 categories: recursion compsci
-order: 7
 ---
 ##Common Tree Traversals for Binary Trees**
 
