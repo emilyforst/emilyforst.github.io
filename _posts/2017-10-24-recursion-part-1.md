@@ -3,6 +3,7 @@ layout: post
 title: 'Recursion, Part 1: Traversing Arrays'
 date:   2017-10-23 15:44:07 +0100
 categories: recursion compsci
+order: 2
 ---
 
 Now that we're set up, let's dive in!  For this section, clone this GitHub respository.  Try to answer all of the questions in the questions folder yourself.  However, if you get stuck, there's a solutions folder with suggested solutions.  There are many ways to answer these questions, and your answer may not match the one in the solutions folder.  However, consider reviewing the blog post and using a debugger before jumping to the solution.  And most importantly, enjoy!  

@@ -3,6 +3,7 @@ layout: post
 title:  'Recursion, Part 3: Working with Nested Arrays'
 date:   2017-10-25 019:32:34 +0100
 categories: recursion compsci
+order: 4
 ---
 
 Let's write a function `deepOnlyIntegers` that returns an array, removing all non-integers, no matter how deeply the array is nested.  

@@ -3,6 +3,7 @@ layout: post
 title:  'Recursion: Introduction'
 date:   2017-10-23 10:24:08 +0100
 categories: recursion compsci
+order: 1
 ---
 
 Welcome to the wonderful world of recursion!  This is a series of blog posts on thinking recursively.  The code samples are in JavaScript.  To get the most out of them, you'll need to understand just the basics (functions, arrays, conditionals).  There are many great JavaScript primers online ([Eloquent JavaScript](http://eloquentjavascript.net/ "Eloquent JavaScript"){:target="_blank"} is a favorite).  We'll use a small subset of the language, so if you're coming from another language, it shouldn't take long to get up to speed.  Let's get started!

@@ -3,6 +3,7 @@ layout: post
 title: 'Recursion, Part 2: Building Arrays'
 date:   2017-10-24 11:45:44 +0100 
 categories: recursion compsci
+order: 3
 ---
 
 You'll find the companion GitHub repository for Part 2 here.  The following post is meant to serve as a foundation for working through the practice problems. You may also want to have a console open to experiment with while reading.  Have fun!
