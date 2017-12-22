@@ -4,7 +4,8 @@ title: 'Recursion, Part 6: Traversing Binary Trees'
 date:  2017-11-01 10:31:54 +0000 
 categories: recursion compsci
 ---
-##Common Tree Traversals for Binary Trees
+
+## Common Tree Traversals for Binary Trees
 
 > - Breadth First (also called Level Order)
 > - Depth First
