@@ -13,6 +13,7 @@ categories: recursion compsci
   > (b) Preorder 
   > (c) Postorder
 
+We'll start with this binary tree:
 
 	         11
 	        /  \
