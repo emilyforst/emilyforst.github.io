@@ -22,6 +22,8 @@ We'll start with this binary tree:
 	     2  8  13  18
 
 
+Let's express it in JavasScript as:
+
 {% highlight js %}
 const binaryTreeB = {
   value: 11, 
