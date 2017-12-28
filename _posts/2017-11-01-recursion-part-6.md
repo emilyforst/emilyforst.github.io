@@ -13,6 +13,15 @@ categories: recursion compsci
   > (b) Preorder 
   > (c) Postorder
 
+What would the inorder, preorder, and postorder traversals look like for the following tree?
+
+      1
+     / \
+    2   3
+   / \  / \
+  4  5  6  7
+
+
 We'll start with this binary tree:
 
 	         11
