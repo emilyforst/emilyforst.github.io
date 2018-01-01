@@ -5,22 +5,7 @@ date:  2017-11-01 10:31:54 +0000
 categories: recursion compsci
 ---
 
-## Tree Traversals for Binary Trees
-
-> - Breadth First (also called Level Order)
-> - Depth First
-  > (a) Inorder 
-  > (b) Preorder 
-  > (c) Postorder
-
-What would the inorder, preorder, and postorder traversals look like for the following tree?
-
-      1
-     / \
-    2   3
-   / \  / \
-  4  5  6  7
-
+## Tree Traversal for Binary Trees
 
 We'll start with this binary tree:
 
