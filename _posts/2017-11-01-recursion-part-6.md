@@ -62,7 +62,7 @@ logBinaryTree(binaryTreeB)
 {% endhighlight %}
 
 
-And we're finished!
+Give it a try before looking at the following solution.
 
 {% highlight js %}
 function logBinaryTree(tree) {
@@ -119,7 +119,7 @@ function onlyIntegersTree(tree) {
 onlyIntegersTree(binaryTreeC);
 {% endhighlight %}
 
-And we're finished!
+Give it a try before looking at the following solution.
 
 {% highlight js %}
 function onlyIntegersTree(tree) {
