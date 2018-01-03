@@ -79,8 +79,6 @@ const binaryTreeA =
 
 What is the depth, height, and level of the node whose value is 7 in the above tree?
 
-Is the above tree a Binary Search Tree? Why?
-
 
 
 
