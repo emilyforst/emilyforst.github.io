@@ -52,7 +52,7 @@ const binaryTreeB = {
 
 
 
-Let's write a function that traverses this tree, and logs each node to the console.  As usual, let's start by writing the function.
+How could we write a function that traverses this tree, and logs each node to the console?  Given what we've learned about binary trees, give it a shot with the following function.
 
 {% highlight js %}
 function logBinaryTree(tree) {
